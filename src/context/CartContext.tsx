@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { createContext, useContext } from 'react'
 import { useLocalStorage } from '../hooks/ls'
 
@@ -38,7 +37,7 @@ export const CartProvider = ({ children } : CartProviderProps) => {
         return cartItems.find(item => item.id === id)?.quantity || 0
     }
     const addItem = (id: number) => {
-        setCartItems (currentItems => {
+        setCartItems (()=> {
             if (cartItems.find(item => item.id === id) == null) {
                 return [...cartItems, { id, quantity: 1 }]
             } else {
@@ -53,7 +52,7 @@ export const CartProvider = ({ children } : CartProviderProps) => {
         })
     }
     const removeItem = (id: number) => {
-        setCartItems(currentItems => {
+        setCartItems(() => {
             if (cartItems.find(item => item.id === id)?.quantity === 1) {
                 return cartItems.filter(item => item.id !== id)
             } else {
@@ -69,9 +68,7 @@ export const CartProvider = ({ children } : CartProviderProps) => {
     }
 
     const clearCart = (id: number) => {
-        setCartItems(currentItems =>{
-            return cartItems.filter(item => item.id !== id)
-        })
+        setCartItems(cartItems.filter(item => item.id !== id))
     }
     return <CartContext.Provider value={{itemQuantity, addItem, removeItem, clearCart, cartItems, cartQuantity}}>{children}</CartContext.Provider>
 }

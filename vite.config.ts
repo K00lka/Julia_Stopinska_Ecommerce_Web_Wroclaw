@@ -7,4 +7,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: '/Julia_Stopinska_Ecommerce_Web_Wroclaw/'
 })

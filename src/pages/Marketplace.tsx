@@ -4,9 +4,6 @@ import { ProductCard } from '../components/ProductCard';
 
 
 export const Marketplace = () => {
-  
-  console.log(ProductsList);
-
   return (
  <>   
  

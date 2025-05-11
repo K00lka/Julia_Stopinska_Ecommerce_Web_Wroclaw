@@ -5,7 +5,7 @@ import ProductsList from '../data/products.json';
 
 import { Stack } from "react-bootstrap";
 export const Summary = () => {
-    const{ cartItems, clearAllCart } = useCart();
+    const{ cartItems } = useCart();
     return <div>
         <NavLink to="/Koszyk" className='p-2'>Cofnij</NavLink>
         <div>
@@ -24,7 +24,7 @@ export const Summary = () => {
             Specifically I was not sure what was ment by realoding as new HTML. 
              */}
              {cartItems.length>0&&<div className="mt-4 mb-4 p-4 flex justify-center item-center ">
-                <Link to="/Potwierdzenie" state={{SumItems}} className='flex p-4 mt-2 mb-2 rounded  items-center hover:bg-sky-700  text-white justify-center bg-blue-400 round h-10 w-50' reloadDocument onClick={()=> {localStorage.clear(); clearAllCart();}}>Zamów i zapłać</Link>
+                <Link to="/Potwierdzenie" state={{cartItems:cartItems}} className='flex p-4 mt-2 mb-2 rounded  items-center hover:bg-sky-700  text-white justify-center bg-blue-400 round h-10 w-50' reloadDocument onClick={()=> {localStorage.clear();}}>Zamów i zapłać</Link>
                 </div>}
             {/* I use here localStorage.clear() to empty the shopping cart and state={} 
             to forward the list of items to the /Confirmation.tsx, but the clearing method stopped workin after setting

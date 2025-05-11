@@ -1,0 +1,50 @@
+[
+        {
+        "id": 1,
+        "name": "Banany BIO",
+        "price": {
+        "main": 3,
+        "fractional": 49
+        },
+        "image": "https://images.pexels.com/photos/2238309/pexels-photo-2238309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+        "id": 2,
+        "name": "Mleko 3.2%",
+        "price": {
+        "main": 2,
+        "fractional": 89
+        },
+        "image": "https://unblast.com/wp-content/uploads/2020/06/Milk-Carton-Packaging-Mockup-1536x1152.jpg"
+        
+        },
+        {
+        "id": 3,
+        "name": "Chleb Żytni",
+        "price": {
+        "main": 4,
+        "fractional": 15
+        },
+        "image": "https://img.freepik.com/free-photo/high-angle-bread-white-cutting-board_23-2148544713.jpg?t=st=1746961486~exp=1746965086~hmac=238db4ee6023cf11501353f7cffdb066bf11c34071622d32044dddaebd4c157c&w=1380"
+        
+        },
+        {
+        "id": 4,
+        "name": "Jaja 6 sztuk",
+        "price": {
+        "main": 6,
+        "fractional": 99
+        },
+        "image": "https://images.pexels.com/photos/162712/egg-white-food-protein-162712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+        "id": 5,
+        "name": "Łosoś wędzony",
+        "price": {
+        "main": 5,
+        "fractional": 20
+        },
+        "image": "https://img.freepik.com/free-photo/fresh-smoked-salmon-slices_114579-11747.jpg?t=st=1746961446~exp=1746965046~hmac=2e33b15c5139f699baa4b5daf274a2f06d3fd9622a35996638a189a9388f833e&w=1380"
+        
+        }
+]
